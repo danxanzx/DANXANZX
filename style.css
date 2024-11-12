@@ -1,0 +1,150 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #f1f1f1;
+}
+
+/* Estilos del encabezado */
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #111;
+}
+
+.greeting h1 {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-top: 20px;
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Colores de los botones basados en los logos de redes sociales */
+.tiktok-btn {
+    background-color: #000;
+    color: #fff;
+}
+
+.instagram-btn {
+    background-color: #E4405F;
+    color: #fff;
+}
+
+.threads-btn {
+    background-color: #1A1A1A;
+    color: #fff;
+}
+
+.correo-btn {
+    background-color: #33beff;
+    color: #fff;
+}
+
+/* Efectos de hover */
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos de las secciones */
+section {
+    padding: 40px;
+    text-align: center;
+    margin-top: 30px;
+    background-color: #444;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la sección Focus */
+#focus {
+    padding: 40px;
+    text-align: center;
+    margin-top: 30px;
+    background-color: #444;
+    border-radius: 8px;
+}
+
+#focus h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #f1f1f1;
+}
+
+/* Estilos para las imágenes en cuadritos */
+.focus-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 20px; /* Espacio entre las imágenes */
+    justify-items: center; /* Centra las imágenes dentro de sus celdas */
+}
+
+.focus-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.focus-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilo del pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Media Query para dispositivos pequeños (móviles) */
+@media screen and (max-width: 768px) {
+    .social-links {
+        flex-direction: column; /* Cambia la dirección de los botones para apilarse verticalmente */
+    }
+
+    .focus-images {
+        grid-template-columns: repeat(2, 1fr); /* Cambia a 2 columnas en dispositivos pequeños */
+    }
+}
